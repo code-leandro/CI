@@ -22,12 +22,13 @@ jobs:
     
     - name: Show default environment variables
       run: |
-        echo "TESTE: $TESTE"
+        echo "TESTE: ${{env.TESTE}}"
         echo "The job_id is: $GITHUB_JOB"   # reference the default environment variables
         echo "The id of this action is: $GITHUB_ACTION"   # reference the default environment variables
         echo "The run id is: $GITHUB_RUN_ID"
         echo "The GitHub Actor's username is: $GITHUB_ACTOR"
         echo "GitHub SHA: $GITHUB_SHA"
+        exit_with_success
           
     - name: Set up Go
       uses: actions/setup-go@v4
