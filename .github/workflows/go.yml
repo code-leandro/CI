@@ -15,8 +15,8 @@ jobs:
     runs-on: ${{ matrix.OS }}
     strategy:
       matrix:
-        go_version: ['1.18', '>=1.20']
-        OS: ['windows-latest'] # 'ubuntu-latest'
+        go_version: ['>=1.20']
+        OS: ['mcr.microsoft.com/windows/server:ltsc2022'] # 'ubuntu-latest'
     steps:
     - uses: actions/checkout@v3
 
