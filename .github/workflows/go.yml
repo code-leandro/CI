@@ -22,7 +22,7 @@ jobs:
     
     - name: Show default environment variables
       run: |
-        echo ${{ vars.TESTE }}
+        echo "Valor: ${{ vars.TESTE }}"
         echo "The job_id is: $GITHUB_JOB"   # reference the default environment variables
         echo "The id of this action is: $GITHUB_ACTION"   # reference the default environment variables
         echo "The run id is: $GITHUB_RUN_ID"
